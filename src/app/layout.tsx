@@ -26,6 +26,11 @@ const poppinsBold = localFont({
   variable: '--font-poppins-bold',
   weight: '700', // Bold
 });
+const PoppinsLight = localFont({
+  src: '../typography/fonts/PoppinsLight.ttf',
+  variable: '--font-poppins-bold',
+  weight: '700', // Bold
+});
 export const metadata: Metadata = {
   title: 'Blue Bite | Connecting Possibilities',
   description: 'Connecting brands and consumers through products',
@@ -39,7 +44,7 @@ function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppinsRegular.variable} ${poppinsMedium.variable} ${poppinsSemiBold.variable} ${poppinsBold.variable} antialiased`}
+        className={`${poppinsRegular.variable} ${poppinsMedium.variable} ${poppinsSemiBold.variable} ${poppinsBold.variable} ${PoppinsLight.variable} antialiased`}
       >
         {children}
       </body>

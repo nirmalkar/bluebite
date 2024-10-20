@@ -5,6 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Font Variables */
+  --font-poppins-regular: 'Poppins', sans-serif; /* Regular */
+  --font-poppins-medium: 'Poppins', sans-serif; /* Medium */
+  --font-poppins-semi-bold: 'Poppins', sans-serif; /* Semi-Bold */
+  --font-poppins-bold: 'Poppins', sans-serif; /* Bold */
+  --font-poppins-light: 'Poppins', sans-serif; /* Light */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +24,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins-regular); /* Default font */
 }
 
 @layer utilities {

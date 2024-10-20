@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "next/typescript"
+  ],
+  "plugins": ["jsx-a11y", "react", "import", "prettier"],
+  "rules": {
+    "react/no-danger": "warn",
+    "jsx-a11y/anchor-is-valid": "error",
+    "jsx-a11y/img-redundant-alt": "warn",
+    "import/no-unused-modules": ["warn", { "unusedExports": true }],
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "endOfLine": "auto" }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin", // Built-in imports go first (e.g. fs, path)
+          "external", // External imports (npm packages)
+          "internal", // Internal imports (e.g. utils, constants)
+          ["parent", "sibling", "index"] // Parent, sibling, and index imports
+        ],
+        "alphabetize": {
+          "order": "asc", // Sort in ascending order
+          "caseInsensitive": true // Ignore case when sorting
+        },
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always" // Enforce new lines between groups
+      }
+    ]
+  }
+}

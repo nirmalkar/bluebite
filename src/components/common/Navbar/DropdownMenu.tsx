@@ -16,7 +16,7 @@ interface DropdownAndCardMenuProps {
 
 const DropdownMenu: React.FC<DropdownAndCardMenuProps> = ({ title, items }) => {
   return (
-    <div className="absolute left-0 right-0 top-full z-10 hidden group-hover:flex flex-col shadow-md p-4 rounded-lg w-full max-w-6xl mx-auto">
+    <div className="absolute left-0 right-0 top-full z-10 bg-white hidden group-hover:flex flex-col shadow-md p-4 rounded-lg w-full max-w-6xl mx-auto">
       <h2 className="text-sm mb-2 font-[family-name:var(--font-poppins-semi-bold)] uppercase text-gray-400">
         {title}
       </h2>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import localFont from 'next/font/local';
 import React from 'react';
 import './globals.css';

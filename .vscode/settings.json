@@ -2,7 +2,6 @@
   // Format code on save
   "editor.formatOnSave": true,
 
-  // Set default formatter to Prettier for all files
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

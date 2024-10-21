@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import MobileMenu from '@/components/specific/Sheet';
 import { imageUrls } from '@/constants/ImageUrlConstants';
 import { menuItems } from '@/constants/NavbarConstants';
 import ArrowIcon from '@/icons/arrow';
@@ -11,11 +12,12 @@ import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
   return (
-    <nav className="p-4 lg:p-0 relative shadow-sm bg-white text-gray-600">
-      <div className="flex justify-between items-center px-8 max-w-6xl mx-auto">
+    <nav className="p-4 lg:p-0 relative shadow-sm text-gray-600 z-20 bg-white">
+      <div className="flex justify-between bg-white items-center md:px-8 max-w-7xl mx-auto">
         <div>
           <Image
             src={imageUrls['appLogo']}
+            className="w-24 h-auto w-16 sm:w-24 lg:w-22"
             alt="Logo"
             width={100}
             height={50}
@@ -26,7 +28,7 @@ const Navbar = () => {
             <div className="group h-full" key={index}>
               <Link
                 href="#"
-                className="px-4 hover:text-[#2e71f0] flex items-center py-6 font-[family-name:var(--font-poppins-semi-bold)]"
+                className="text-md px-4 text-gray-800 hover:text-[#2e71f0] flex items-center py-6 font-[family-name:var(--font-poppins-semi-bold)]"
               >
                 {menuItem.title}
                 <span className="ml-2 transition-transform duration-300 group-hover:rotate-[180deg]">
@@ -37,18 +39,21 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <button
-          onClick={() =>
-            window.open(
-              `${process.env.NEXT_PUBLIC_LOGIN_URL}`,
-              '_blank',
-              'noopener,noreferrer'
-            )
-          }
-          className="bg-[#2e71f0] text-white py-2 px-4 rounded-md hover:bg-[#1a61e8] cursor-pointer"
-        >
-          Login
-        </button>
+        <div className="flex items-center gap-4 justify-between">
+          <button
+            onClick={() =>
+              window.open(
+                `${process.env.NEXT_PUBLIC_LOGIN_URL}`,
+                '_blank',
+                'noopener,noreferrer'
+              )
+            }
+            className="bg-[#2e71f0] text-white rounded-md hover:bg-[#1a61e8] cursor-pointer py-2 px-3 text-sm md:py-2 md:px-4 md:text-base"
+          >
+            Login
+          </button>
+          <MobileMenu />
+        </div>
       </div>
     </nav>
   );

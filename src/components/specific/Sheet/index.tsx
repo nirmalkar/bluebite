@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { menuItems } from '@/constants/NavbarConstants';
+import { menuItems } from '@/constants/copies/NavbarConstants';
 import ArrowIcon from '@/icons/arrow';
 
 import CheckIsImageLogo from '../CheckIsImageLogo';

@@ -37,7 +37,7 @@ const menuItems: MenuItem[] = [
       {
         title: 'Brand Protection',
         isLogo: true,
-        description: '',
+        description: 'Protect consumers and brand integrity',
         href: '/brand-protection',
         image_url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/5eb449205171c0e023932369_Brand-Protection.svg`,
       },

@@ -7,6 +7,7 @@ type heroType = {
     bg: string;
     color: string;
     icon: string;
+    link: string;
   }[];
 };
 type PartnershipsType = {
@@ -41,6 +42,7 @@ type FeaturesCopyType = {
     text: string;
     bg: string;
     color: string;
+    link: string;
   }[];
   features: {
     title: string;
@@ -59,12 +61,14 @@ export const heroCopy: heroType = {
       bg: '#f1f1f1',
       color: '#333',
       icon: 'message',
+      link: '/demo-request',
     },
     {
       text: 'Create Free QR Code',
       bg: '#2e71f0',
       color: 'white',
       icon: 'qrcode',
+      link: '/connect',
     },
   ],
 };
@@ -145,6 +149,7 @@ export const FeaturesCopy: FeaturesCopyType = {
       text: 'Increase Engagement with Blue Bite Personalization',
       bg: '#2e71f0',
       color: 'white',
+      link: '/personalization',
     },
   ],
   features: [

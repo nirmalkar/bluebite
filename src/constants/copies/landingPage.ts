@@ -13,7 +13,6 @@ type PartnershipsType = {
   title: string;
   icons: {
     name: string;
-    url: string;
   }[];
   buttons: {
     text: string;
@@ -76,47 +75,36 @@ export const PartnershipsCopy: PartnershipsType = {
   icons: [
     {
       name: 'p&g',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2ca9fe8fac91_p%26g-05.svg`,
     },
     {
       name: 'adidas',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c75f08fac93_adidas-blue-bite.svg`,
     },
     {
       name: 'loreal',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c02618fac90_L%27oreal-01.svg`,
     },
     {
       name: 'bvlgari',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c39338fac92_BVLGARI-02.svg`,
     },
     {
       name: 'moethennessy',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c32d38fac94_Moet-hennessy-blue-bite.svg`,
     },
     {
       name: 'decathlon',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c188e8fac95_Decathlon-blue-bite.svg`,
     },
     {
       name: 'remy-martin',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2cf16f8fac96_Remy-Martin-blue-bite.svg`,
     },
     {
       name: 'vita-coco',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c07ba8fac97_Vita-Coco-Blue-Bite.svg`,
     },
     {
       name: 'moose-knuckles',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/64371952d86b2c1d608fac98_Moose-Knuckles-Blue-Blue-Bite.svg`,
     },
     {
       name: 'pernod-ricard',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/64371952d86b2c5e5f8fac99_Pernod-Ricard-Pernod-Ricard.svg`,
     },
     {
       name: 'samsung',
-      url: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/5efa14b3efc8cf5e91917bba_Samsung-5.svg`,
     },
   ],
   buttons: [

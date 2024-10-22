@@ -15,7 +15,7 @@ interface BrandIconsProps {
 const BrandIcons: React.FC<BrandIconsProps> = ({ brand }) => {
   switch (brand) {
     case 'p&g':
-      return <PAndG size={52} />;
+      return <PAndG size={70} />;
     case 'loreal':
       return <Loreal size={150} />;
     case 'moethennessy':
@@ -25,7 +25,7 @@ const BrandIcons: React.FC<BrandIconsProps> = ({ brand }) => {
     case 'remy-martin':
       return <RemyMartin size={150} />;
     case 'vita-coco':
-      return <VitaCoco size={50} />;
+      return <VitaCoco size={70} />;
     case 'moose-knuckles':
       return <Moose size={180} />;
     case 'samsung':

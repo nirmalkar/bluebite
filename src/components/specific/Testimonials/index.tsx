@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
       <p className="pt-8 text-lg lg:text-xl font-light text-gray-600 leading-relaxed mx-auto font-[family-name:var(--font-poppins-light)]">
         {TestimonialsCopy.description}
       </p>
-      <div className="relative p-8 mx-auto text-center bg-gray-50 rounded-lg shadow-sm mt-12 transition-transform transform hover:scale-101">
+      <div className="relative p-8 mx-auto text-center bg-gray-50 rounded-lg shadow-sm mt-12 transition-transform transform">
         <div className="absolute top-4 left-4">
           <Quote size={50} color="#2e71f0" />
         </div>

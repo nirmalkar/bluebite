@@ -48,7 +48,7 @@ const Navbar = () => {
                 'noopener,noreferrer'
               )
             }
-            className="bg-[#2e71f0] text-white rounded-md hover:bg-[#1a61e8] cursor-pointer py-2 px-3 text-sm md:py-2 md:px-4 md:text-base"
+            className="bg-[#2e71f0] text-white rounded-md cursor-pointer py-2 px-3 text-sm md:py-2 md:px-4 md:text-base hover:bg-[#1a61e8] hover:shadow-md"
           >
             Login
           </button>

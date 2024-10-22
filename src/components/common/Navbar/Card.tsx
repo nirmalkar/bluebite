@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <Link href={href}>
-      <div className="shadow-sm rounded-lg p-6 transition-transform transform flex flex-col hover:scale-102 shadow-sm hover:shadow-md hover:bg-gray-200 text-gray-700 h-full bg-gray-100 hover:text-[#2e71f0] text-gray-800">
+      <div className="shadow-sm rounded-lg p-6 transition-transform transform flex flex-col shadow-sm hover:shadow-md hover:bg-gray-200 text-gray-700 h-full bg-gray-100 hover:text-[#2e71f0] text-gray-800">
         {image_url && (
           <CheckIsImageLogo
             title={title}

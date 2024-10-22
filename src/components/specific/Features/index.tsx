@@ -26,7 +26,7 @@ const Features: React.FC = () => {
           <button
             onClick={() => router.push(button.link)}
             key={index}
-            className={`w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-lg shadow-sm border bg-[${button.bg}] text-${button.color} flex justify-center items-center gap-2 text-base sm:text-lg`}
+            className={`w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-lg shadow-sm border bg-[${button.bg}] text-${button.color} flex justify-center items-center gap-2 text-base sm:text-lg hover:bg-[${button.hover_bg}] hover:shadow-md`}
           >
             {button.text}
           </button>
@@ -35,7 +35,7 @@ const Features: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 gap-4 sm:gap-8 sm:pt-24">
         {FeaturesCopy.features.map((feature) => (
           <div
-            className="p-4 rounded-lg bg-gray-50 shadow-sm flex flex-col justify-center items-center gap-4"
+            className="p-4 rounded-lg bg-gray-50 shadow-sm flex flex-col justify-center items-center gap-4 hover:scale-105 hover:shadow-md transition-transform duration-300"
             key={feature.title}
           >
             <Image

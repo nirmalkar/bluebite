@@ -60,6 +60,20 @@ git clone https://github.com/nirmalkar/bluebite.git
 cd bluebite
 ```
 
+## Environment
+
+create a .env.local file in the root and add following variables
+
+```bash
+touch .env.local
+```
+
+```bash
+# add these inside the .env.local file with the real values.
+NEXT_PUBLIC_FILES_BASE_URL=files_base_url
+NEXT_PUBLIC_LOGIN_URL=login_url
+```
+
 ## Install Dependencies
 
 ### Using npm:

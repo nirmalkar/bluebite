@@ -72,7 +72,7 @@ const MobileMenu: React.FC = () => {
                       key={itemIndex}
                       className="sm:py-6 hover:underline text-center hover:text-[#2e71f0]"
                     >
-                      <div className="shadow-sm rounded-lg p-4 transition-transform transform flex flex-col hover:scale-102 hover:shadow-md hover:bg-gray-200 text-gray-700 h-full">
+                      <div className="shadow-sm rounded-lg p-4 transition-transform transform flex flex-col hover:shadow-md hover:bg-gray-200 text-gray-700 h-full">
                         {item.image_url && (
                           <div className="flex justify-center mb-2">
                             <CheckIsImageLogo

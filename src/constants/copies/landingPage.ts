@@ -7,6 +7,7 @@ type heroType = {
     bg: string;
     color: string;
     icon: string;
+    hover_bg: string;
     link: string;
   }[];
 };
@@ -20,6 +21,8 @@ type PartnershipsType = {
     bg: string;
     color: string;
     icon: string;
+    link: string;
+    hover_bg: string;
   }[];
 };
 type TestimonialsType = {
@@ -43,6 +46,7 @@ type FeaturesCopyType = {
     bg: string;
     color: string;
     link: string;
+    hover_bg: string;
   }[];
   features: {
     title: string;
@@ -50,6 +54,13 @@ type FeaturesCopyType = {
     icon: string;
   }[];
 };
+
+type HowItWorksCopyType = {
+  title: string;
+  description: string;
+  videoId: string;
+};
+
 export const heroCopy: heroType = {
   title: 'Connecting brands and consumers through products®',
   hero_image: `${process.env.NEXT_PUBLIC_FILES_BASE_URL}/5aa16619a722600001c19c3b/6437188f21cf93110e5b9588_2023-Website%20Hero-4.jpg`,
@@ -62,6 +73,7 @@ export const heroCopy: heroType = {
       color: '#333',
       icon: 'message',
       link: '/demo-request',
+      hover_bg: '#f1f1f1',
     },
     {
       text: 'Create Free QR Code',
@@ -69,6 +81,7 @@ export const heroCopy: heroType = {
       color: 'white',
       icon: 'qrcode',
       link: '/connect',
+      hover_bg: '#1a61e8',
     },
   ],
 };
@@ -114,9 +127,11 @@ export const PartnershipsCopy: PartnershipsType = {
   buttons: [
     {
       text: 'Improve Your Connected Products Today',
-      bg: '#f1f1f1',
-      color: '#333',
+      bg: '#2e71f0',
+      color: 'white',
       icon: 'message',
+      link: '/demo-request',
+      hover_bg: '#1a61e8',
     },
   ],
 };
@@ -150,6 +165,7 @@ export const FeaturesCopy: FeaturesCopyType = {
       bg: '#2e71f0',
       color: 'white',
       link: '/personalization',
+      hover_bg: '#1a61e8',
     },
   ],
   features: [
@@ -172,4 +188,10 @@ export const FeaturesCopy: FeaturesCopyType = {
         'Stop missing out on valuable in-store data and post-purchase intelligence',
     },
   ],
+};
+
+export const HowItWorksCopy: HowItWorksCopyType = {
+  title: 'HOW IT WORKS?',
+  description: 'Watch this video to find out in just over one minute',
+  videoId: 'zEhF5avFnL4',
 };

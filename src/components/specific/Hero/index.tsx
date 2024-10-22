@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           <button
             onClick={() => router.push(button.link)}
             key={index}
-            className={`w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-lg shadow-sm border bg-[${button.bg}] text-${button.color} flex justify-center items-center gap-2 text-base sm:text-lg`}
+            className={`w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-lg shadow-sm border bg-[${button.bg}] text-${button.color} flex justify-center items-center gap-2 text-base sm:text-lg hover:bg-[${button.hover_bg}] hover:shadow-md`}
           >
             {button.text}
             <MiscLogo color={button.color} icon={button.icon} size={22} />
